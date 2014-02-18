@@ -610,6 +610,17 @@ describe('i-bem', function() {
             }, 0);
         });
     });
+
+    describe('mod change events', function() {
+        var block;
+        beforeEach(function() {
+            BEM.decl('block', {});
+            block = BEM.create({ block : 'block', mods : { mod1 : 'val1' } });
+        });
+        afterEach(function() {
+            delete BEM.blocks['block'];
+        });
+    });
 });
 
 provide();
