@@ -319,6 +319,10 @@ module.exports = function(config) {
                     'bemhtml-prod' : {
                         tech : 'enb-bemxjst/techs/bemhtml-old',
                         options : { devMode : false }
+                    },
+                    'bh-php' : {
+                        tech : '../../../../../.enb/techs/bh-php-test',
+                        isAsync : true
                     }
                 }
             });
